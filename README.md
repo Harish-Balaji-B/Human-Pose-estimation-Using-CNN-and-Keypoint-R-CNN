@@ -1,2 +1,40 @@
-# Human-Pose-estimation-Using-CNN-and-Keypoint-R-CNN
-This repository focuses on human pose estimation using deep convolutional neural networks and key point R-CNN. The objective is to predict human key point coordinates from input images, enabling the visualization of human poses by drawing skeletons. 
+# Human Pose estimation Using CNN and Keypoint R-CNN
+
+### Introduction
+Human pose estimation is a crucial task in computer vision, involving the prediction of the spatial arrangement of a person's body from images or videos. The accurate estimation of human poses has numerous applications, including activity recognition, human-computer interaction, and augmented reality. However, pose estimation is challenging due to variations in human body shapes, poses, and environmental conditions.
+
+In this project, we aim to develop a human pose estimation model using deep learning techniques. Our goal is to accurately predict keypoint coordinates corresponding to anatomical landmarks on the human body, such as joints and limbs. By addressing this problem, we aim to contribute to advancements in computer vision and enable applications that require precise understanding of human movements and interactions
+
+### Methodology - CNN
+* <strong>Data Preprocessing: </strong>
+  * Image Resizing and Normalization: All images in the MPII Human Pose dataset are resized to 220x220 pixels to ensure consistent input dimensions for the model. The pixel values are normalized to a range between 0 and 1 to facilitate convergence during training.
+  * Data Augmentation: Data augmentation techniques such as random rotations, 
+translations, flips, and adjustments in brightness or contrast are applied to 
+increase the variability of the training data. This helps in improving model 
+generalization and robustness.
+
+* <strong>Model Architecture Design: </strong>
+  * We design a deep convolutional neural network (CNN) architecture tailored for human pose estimation.
+  * The model architecture consists of multiple convolutional layers followed by max-pooling layers to learn hierarchical features from input images.
+  * Skip connections or residual connections are incorporated to facilitate information flow across different layers and capture both local and global spatial relationships in the input images.
+
+* <strong>Training Procedure: </strong>
+  * Dataset Splitting: The preprocessed dataset is split into training and validation sets to monitor model performance and prevent overfitting.
+  * Optimizer: The Adam optimizer is selected for its adaptive learning rate capabilities, which help in faster and more stable convergence.
+  * Loss Function: Mean Squared Error (MSE) is used as the loss function to minimize the difference between predicted and ground truth keypoints.
+  * Learning Rate Scheduling: The learning rate is adjusted during training. For example, it can be reduced after a certain number of epochs or based on validation performance to prevent overshooting the optimal solution.
+  * Training Iterations: Batches of training data are iteratively fed to the model. The model's weights are updated based on gradients computed from backpropagation.
+  * Regularization Techniques: Early stopping and learning rate scheduling are employed to prevent overfitting and ensure stable convergence during training.
+
+### Results - CNN
+* <strong>Performance Metrics: </strong>
+  * Learning Curves: Plots of training and validation loss over epochs show the model's learning progress and help in diagnosing potential overfitting or underfitting.
+  * Accuracy Improvements: Regularization techniques and learning rate adjustments lead to significant improvements in model accuracy over the training period.
+
+* <strong>Training and Validation Performance: </strong>
+  * Training Progress: The learning rate adjustments and regularization techniques applied during training helped in achieving stable convergence and avoiding overfitting.
+  * Validation Results: The model demonstrated high accuracy in predicting keypoint coordinates on the validation set, as indicated by low MAE and effective visualizations of predicted poses.
+
+
+
+
