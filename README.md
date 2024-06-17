@@ -35,6 +35,24 @@ generalization and robustness.
   * Training Progress: The learning rate adjustments and regularization techniques applied during training helped in achieving stable convergence and avoiding overfitting.
   * Validation Results: The model demonstrated high accuracy in predicting keypoint coordinates on the validation set, as indicated by low MAE and effective visualizations of predicted poses.
 
+![lmao](https://github.com/Harish-Balaji-B/Human-Pose-estimation-Using-CNN-and-Keypoint-R-CNN/blob/main/Results/cnn.png)<br>
 
 
+### Methodology - Key Point R-CNN
+* <strong>Data Preprocessing: </strong>
+  * Image Reading: Input images are read using OpenCV.
+  * Transformation: Images are transformed to tensors using the torchvision.transforms module, which normalizes and prepares the images for the model.
 
+* <strong>Model: </strong
+  * The model used is the keypointrcnn_resnet50_fpn, a pre-trained model designed for object detection and keypoint detection. This model leverages a ResNet-50 backbone with a Feature Pyramid Network (FPN) for robust feature extraction at multiple scales.
+  
+* <strong>Image Processing: </strong>
+  * Images are read and transformed into a format suitable for the model.
+  * The model processes the image, outputting the detected keypoints and their 
+corresponding scores.
+
+* <strong>Keypoint and Skeleton Drawing: </strong>
+  * Keypoints are drawn on the images using OpenCV, with confidence scores dictating their visibility.
+  * Skeletons are drawn by connecting relevant keypoints based on predefined limb connections.
+ 
+### Results - Key Point R-CNN
