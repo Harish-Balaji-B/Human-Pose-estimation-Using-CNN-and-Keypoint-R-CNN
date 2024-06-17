@@ -62,3 +62,9 @@ corresponding scores.
 An web application using flask has also been implemented using key point RCNN where we can upload an image or do live time pose estimation.
 
 <strong>Results: </strong>
+
+
+### Future Scope
+* Fine-tuning for Specific Applications: Fine-tuning the pre-trained R-CNN model on specific datasets or for specific applications (e.g., sports, medical analysis) could enhance its performance in those areas.
+* Semi-supervised Learning: Utilizing semi-supervised or unsupervised learning techniques could help in leveraging large amounts of unlabeled data to further improve the model's performance.
+* Enhanced Data Augmentation: Implementing more sophisticated data augmentation techniques could help improve the model's robustness to variations in lighting, occlusions, and different poses.
