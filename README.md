@@ -76,4 +76,4 @@ An web application using flask has also been implemented using key point RCNN wh
 Download the saved-model_MPIIy1.keras from the link below: <br>
 https://drive.google.com/file/d/1t9OG8_kjbfmAIF06BTk28A4ygDafKFHP/view?usp=drive_link
 
-`Create a folder "uploads" outside client_server to store the images for the flask application`
+`Create a folder "uploads" inside client_server to store the images for the flask application`
