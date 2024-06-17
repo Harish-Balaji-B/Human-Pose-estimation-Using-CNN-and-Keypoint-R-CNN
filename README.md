@@ -62,8 +62,11 @@ corresponding scores.
 An web application using flask has also been implemented using key point RCNN where we can upload an image or do live time pose estimation.
 
 <strong>Results: </strong>
+![lmao](https://github.com/Harish-Balaji-B/Human-Pose-estimation-Using-CNN-and-Keypoint-R-CNN/blob/main/Results/layout.png)<br>
 
+![lmao](https://github.com/Harish-Balaji-B/Human-Pose-estimation-Using-CNN-and-Keypoint-R-CNN/blob/main/Results/result.png)<br>
 
+![lmao](https://github.com/Harish-Balaji-B/Human-Pose-estimation-Using-CNN-and-Keypoint-R-CNN/blob/main/Results/live.png)<br>
 ### Future Scope
 * Fine-tuning for Specific Applications: Fine-tuning the pre-trained R-CNN model on specific datasets or for specific applications (e.g., sports, medical analysis) could enhance its performance in those areas.
 * Semi-supervised Learning: Utilizing semi-supervised or unsupervised learning techniques could help in leveraging large amounts of unlabeled data to further improve the model's performance.
