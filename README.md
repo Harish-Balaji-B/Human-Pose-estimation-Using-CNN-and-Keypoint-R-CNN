@@ -43,7 +43,7 @@ generalization and robustness.
   * Image Reading: Input images are read using OpenCV.
   * Transformation: Images are transformed to tensors using the torchvision.transforms module, which normalizes and prepares the images for the model.
 
-* <strong>Model: </strong
+* <strong>Model: </strong>
   * The model used is the keypointrcnn_resnet50_fpn, a pre-trained model designed for object detection and keypoint detection. This model leverages a ResNet-50 backbone with a Feature Pyramid Network (FPN) for robust feature extraction at multiple scales.
   
 * <strong>Image Processing: </strong>
