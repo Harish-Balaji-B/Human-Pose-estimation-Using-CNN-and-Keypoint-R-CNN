@@ -1,11 +1,11 @@
 # Human Pose estimation Using CNN and Keypoint R-CNN
 
-### Introduction
+## Introduction
 Human pose estimation is a crucial task in computer vision, involving the prediction of the spatial arrangement of a person's body from images or videos. The accurate estimation of human poses has numerous applications, including activity recognition, human-computer interaction, and augmented reality. However, pose estimation is challenging due to variations in human body shapes, poses, and environmental conditions.
 
 In this project, we aim to develop a human pose estimation model using deep learning techniques. Our goal is to accurately predict keypoint coordinates corresponding to anatomical landmarks on the human body, such as joints and limbs. By addressing this problem, we aim to contribute to advancements in computer vision and enable applications that require precise understanding of human movements and interactions
 
-### Methodology - CNN
+## Methodology - CNN
 * <strong>Data Preprocessing: </strong>
   * Image Resizing and Normalization: All images in the MPII Human Pose dataset are resized to 220x220 pixels to ensure consistent input dimensions for the model. The pixel values are normalized to a range between 0 and 1 to facilitate convergence during training.
   * Data Augmentation: Data augmentation techniques such as random rotations, 
@@ -26,7 +26,7 @@ generalization and robustness.
   * Training Iterations: Batches of training data are iteratively fed to the model. The model's weights are updated based on gradients computed from backpropagation.
   * Regularization Techniques: Early stopping and learning rate scheduling are employed to prevent overfitting and ensure stable convergence during training.
 
-### Results - CNN
+## Results - CNN
 * <strong>Performance Metrics: </strong>
   * Learning Curves: Plots of training and validation loss over epochs show the model's learning progress and help in diagnosing potential overfitting or underfitting.
   * Accuracy Improvements: Regularization techniques and learning rate adjustments lead to significant improvements in model accuracy over the training period.
@@ -38,7 +38,7 @@ generalization and robustness.
 ![lmao](https://github.com/Harish-Balaji-B/Human-Pose-estimation-Using-CNN-and-Keypoint-R-CNN/blob/main/Results/cnn.png)<br>
 
 
-### Methodology - Key Point R-CNN
+## Methodology - Key Point R-CNN
 * <strong>Data Preprocessing: </strong>
   * Image Reading: Input images are read using OpenCV.
   * Transformation: Images are transformed to tensors using the torchvision.transforms module, which normalizes and prepares the images for the model.
@@ -55,10 +55,10 @@ corresponding scores.
   * Keypoints are drawn on the images using OpenCV, with confidence scores dictating their visibility.
   * Skeletons are drawn by connecting relevant keypoints based on predefined limb connections.
  
-### Results - Key Point R-CNN
+## Results - Key Point R-CNN
 ![lmao](https://github.com/Harish-Balaji-B/Human-Pose-estimation-Using-CNN-and-Keypoint-R-CNN/blob/main/Results/rcnn.png)<br>
 
-### Extra Work
+## Extra Work
 An web application using flask has also been implemented using key point RCNN where we can upload an image or do live time pose estimation.
 
 <strong>Results: </strong>
@@ -67,12 +67,13 @@ An web application using flask has also been implemented using key point RCNN wh
 ![lmao](https://github.com/Harish-Balaji-B/Human-Pose-estimation-Using-CNN-and-Keypoint-R-CNN/blob/main/Results/result.png)<br>
 
 ![lmao](https://github.com/Harish-Balaji-B/Human-Pose-estimation-Using-CNN-and-Keypoint-R-CNN/blob/main/Results/live.png)<br>
-### Future Scope
+
+## Future Scope
 * Fine-tuning for Specific Applications: Fine-tuning the pre-trained R-CNN model on specific datasets or for specific applications (e.g., sports, medical analysis) could enhance its performance in those areas.
 * Semi-supervised Learning: Utilizing semi-supervised or unsupervised learning techniques could help in leveraging large amounts of unlabeled data to further improve the model's performance.
 * Enhanced Data Augmentation: Implementing more sophisticated data augmentation techniques could help improve the model's robustness to variations in lighting, occlusions, and different poses.
 
-### Note
+## Note
 Download the saved-model_MPIIy1.keras from the link below: <br>
 https://drive.google.com/file/d/1t9OG8_kjbfmAIF06BTk28A4ygDafKFHP/view?usp=drive_link
 
